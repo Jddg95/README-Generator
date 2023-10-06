@@ -1,5 +1,4 @@
 // TODO: Include packages needed for this application
-const fs = require('fs');
 const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
 const questions = [
@@ -40,13 +39,27 @@ const questions = [
       },
     ];
 
+// using inquirer.js to prompt the user for information 
+inquirer.promp(questions).then((answers) => {
+    // the userts answers are storesd in the answers 
+    console.log(`User input`, answers);
+});
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName, data);
 }
 
+
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    //Use Inquirer.js to prompt the user for input 
+    inquirer.prompt(questions).then((answers) =>{
+        //Create README content using the provided information 
+        const readmeContent = generateReadme(answers);
+    })
+}
+
 
 // Function call to initialize app
 init();
