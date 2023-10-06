@@ -7,6 +7,17 @@ function generateMarkdown(answers) {
   // Generating description section
   readmeContent += `## Description\n\n${answers.project_description}\n\n`;
 
+  // Table of Contents with links to sections
+  readmeContent += `## Table of Contents\n\n`;
+
+  // add links to sections 
+  readmeContent += `- [Installation](#installation)\n`
+  readmeContent += `- [Usage](#usage)\n`
+  readmeContent += `- [License](#license)\n`
+  readmeContent += `- [Contributing](#contributing)\n`
+  readmeContent += `- [Tests](#tests)`
+  readmeContent += `- [Questions](#questions)\n`
+
   // Generate installation
   readmeContent += `## Installation\n\n${answers.installation_instructions}\n\n`;
 
@@ -17,10 +28,7 @@ function generateMarkdown(answers) {
   const licenseBadge = renderLicenseBadge(answers.license_name);
   readmeContent += `## License\n\n${licenseBadge}\n\n`;
 
-  // Generate Contributing
-  readmeContent += `## Contributing\n\n${answers.contribution_guidelines}\n\n`;
-
-  // Generate Test
+  // Generate Tests
   readmeContent += `## Tests\n\n${answers.test_instructions}\n\n`;
 
   return readmeContent;

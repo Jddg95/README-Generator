@@ -32,11 +32,6 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'contribution_guidelines',
-        message: 'Enter Contribution:',
-      }
-      {
-        type: 'input',
         name: 'your_name',
         message: 'Enter your name:',
       },
@@ -72,10 +67,7 @@ function generateReadme(answers) {
   ## License
   
   ${answers.license_name} 
-  
-  ## Contributing
-  
-  ${answers.contribution_guidelines}
+
   
   ## Tests
   
