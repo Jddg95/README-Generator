@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+// importing generate markdown
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -30,6 +32,11 @@ const questions = [
       },
       {
         type: 'input',
+        name: 'contribution_guidelines',
+        message: 'Enter Contribution:',
+      }
+      {
+        type: 'input',
         name: 'your_name',
         message: 'Enter your name:',
       },
@@ -45,20 +52,14 @@ const questions = [
 function generateReadme(answers) {
     // Create a template string for the README content
     const readmeContent = `
-  # ${answers.project_title}
+  
+  ## Title 
+
+  ${answers.project_title}
   
   ## Description
   
   ${answers.project_description}
-  
-  ## Table of Contents
-  
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
   
   ## Installation
   
@@ -70,7 +71,7 @@ function generateReadme(answers) {
   
   ## License
   
-  This project is licensed under the ${answers.license_name} license.
+  ${answers.license_name} 
   
   ## Contributing
   
