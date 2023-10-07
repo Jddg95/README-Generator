@@ -27,6 +27,11 @@ const questions = [
       },
       {
         type: 'input',
+        name: 'test_instructions',
+        message: 'Enter the testing instructions:',
+      },
+      {
+        type: 'input',
         name: 'license_name',
         message: 'Enter the license name:',
       },
