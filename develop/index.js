@@ -84,6 +84,17 @@ function generateReadme(answers) {
   
   - **GitHub**: [${answers.your_name}](https://github.com/${answers.your_name})
   - **Email**: [${answers.your_email}](mailto:${answers.your_email})
+
+  ## Table of Contents
+
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
+
+  
     `;
   
     // Return the generated README content as a string
