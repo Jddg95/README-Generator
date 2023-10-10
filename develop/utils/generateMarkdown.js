@@ -4,6 +4,27 @@ function generateLicenseBadge(licenseName, licenseUrl) {
   return badge;
 }
 
+// Function to generate the URL for a license badge based on the license name
+function getBadgeUrl(licenseName) {
+  // Define mappings of license names to shields.io badge URLs
+  const licenseBadgeUrls = {
+      MIT: 'https://img.shields.io/badge/License-MIT-yellow.svg',
+      'Apache 2.0': 'https://img.shields.io/badge/License-Apache%202.0-blue.svg',
+      'GPL 3.0': 'https://img.shields.io/badge/License-GPLv3-blue.svg',
+      // Add more mappings for other licenses if needed
+  };
+
+  // Get the badge URL for the specified license name
+  const badgeUrl = licenseBadgeUrls[licenseName];
+
+  if (!badgeUrl) {
+      throw new Error(`Badge URL not found for license: ${licenseName}`);
+  }
+
+  return badgeUrl;
+}
+
+
 function generateMarkdown(answers) {
   let readmeContent = '';
 

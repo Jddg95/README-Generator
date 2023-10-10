@@ -37,10 +37,18 @@ const questions = [
         message: 'Enter the testing instructions:',
       },
       {
-        type: 'input',
+        // Use 'list' type for questions with selection options
+        type: 'list', 
         name: 'license_name',
-        message: 'Enter the license name:',
+        message: 'Choose a license:',
+        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'None'],
       },
+      {
+        type: 'input',
+        name: 'license_url',
+        message: 'Enter the URL for the license:',
+        when: (answers) => answers.license_name !== 'None', // Only ask for URL if a license is chosen
+    },
       {
         type: 'input',
         name: 'contribution_guidelines',
@@ -49,7 +57,7 @@ const questions = [
       {
         type: 'input',
         name: 'your_name',
-        message: 'Enter your name:',
+        message: 'Enter your github username:',
       },
       {
         type: 'input',
