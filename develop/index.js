@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const readmeTemplate = require('./utils/readmeTemplate');
 // importing generate markdown
 const generateMarkdown = require('./utils/generateMarkdown');
 
@@ -63,7 +62,7 @@ function generateReadme(answers) {
   ## Title 
 
   ${answers.project_title}
-  
+
   ## Description
   
   ${answers.project_description}
@@ -79,6 +78,8 @@ function generateReadme(answers) {
   ## License
   
   ${answers.license_name} 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
   
   ## Tests
@@ -92,6 +93,13 @@ function generateReadme(answers) {
   - **GitHub**: [${answers.your_name}](https://github.com/${answers.your_name})
   - **Email**: [${answers.your_email}](mailto:${answers.your_email})
   
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
     `;
   
     // Return the generated README content as a string

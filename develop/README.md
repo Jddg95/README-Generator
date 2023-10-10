@@ -3,6 +3,13 @@
   ## Title 
 
   
+
+  ## License Badge
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Installation
+
   
   ## Description
   
@@ -32,4 +39,11 @@
   - **GitHub**: [](https://github.com/)
   - **Email**: [](mailto:)
   
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
     
