@@ -74,6 +74,11 @@ function generateReadme(answers) {
   ## Usage
   
   ${answers.usage_instructions}
+
+  ## Contributing 
+
+  ${answers.contribution_guidelines}
+
   
   ## License
   
@@ -97,7 +102,7 @@ function generateReadme(answers) {
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Questions](#questions)
 - [License](#license)
 
     `;

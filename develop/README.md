@@ -4,13 +4,6 @@
 
   
 
-  ## License Badge
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-## Installation
-
-  
   ## Description
   
   
@@ -22,10 +15,17 @@
   ## Usage
   
   
+
+  ## Contributing 
+
+  undefined
+
   
   ## License
   
    
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
   
   ## Tests
@@ -43,7 +43,7 @@
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Questions](#questions)
 - [License](#license)
 
     
