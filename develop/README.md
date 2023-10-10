@@ -18,7 +18,7 @@
 
   ## Contributing 
 
-  undefined
+  
 
   
   ## License
@@ -40,9 +40,9 @@
   - **Email**: [](mailto:)
   
 ## Table of Contents
-- [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Contributing](#contributing)
 - [Questions](#questions)
 - [License](#license)
 

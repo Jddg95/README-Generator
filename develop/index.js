@@ -43,6 +43,11 @@ const questions = [
       },
       {
         type: 'input',
+        name: 'contribution_guidelines',
+        message: 'Enter contribution guidelines:',
+      },
+      {
+        type: 'input',
         name: 'your_name',
         message: 'Enter your name:',
       },
@@ -99,9 +104,9 @@ function generateReadme(answers) {
   - **Email**: [${answers.your_email}](mailto:${answers.your_email})
   
 ## Table of Contents
-- [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Contributing](#contributing)
 - [Questions](#questions)
 - [License](#license)
 
