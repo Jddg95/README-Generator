@@ -2,23 +2,23 @@
   
   ## Title 
 
-  
+  Title
 
   ## Description
   
-  
+  Description
   
   ## Installation
   
-  
+  Installation Instructions
   
   ## Usage
   
-  
+  Usage instructions
 
   ## Contributing 
 
-  
+  Contributing guidelines
 
   
   ## License
@@ -30,14 +30,14 @@
   
   ## Tests
   
-  
+  Testing instructions
   
   ## Questions
   
   For any questions or inquiries, please reach out to me:
   
-  - **GitHub**: [](https://github.com/)
-  - **Email**: [](mailto:)
+  - **GitHub**: [jddg95](https://github.com/jddg95)
+  - **Email**: [jddgarcia95@gmail.com](mailto:jddgarcia95@gmail.com)
   
 ## Table of Contents
 - [Installation](#installation)

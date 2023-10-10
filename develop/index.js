@@ -45,12 +45,6 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'license_url',
-        message: 'Enter the URL for the license:',
-        when: (answers) => answers.license_name !== 'None', // Only ask for URL if a license is chosen
-    },
-      {
-        type: 'input',
         name: 'contribution_guidelines',
         message: 'Enter contribution guidelines:',
       },
@@ -76,6 +70,8 @@ function generateReadme(answers) {
 
   ${answers.project_title}
 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
   ## Description
   
   ${answers.project_description}
@@ -96,10 +92,7 @@ function generateReadme(answers) {
   ## License
   
   ${answers.license_name} 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
-  
   ## Tests
   
   ${answers.test_instructions}
