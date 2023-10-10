@@ -1,8 +1,15 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const readmeTemplate = require('./utils/readmeTemplate');
 // importing generate markdown
 const generateMarkdown = require('./utils/generateMarkdown');
+
+//Function to generate README fontent based on user input 
+function generateReadme(answers) {
+  const readmeContent = readmeTemplate;
+  return readmeContent;
+}
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -84,16 +91,6 @@ function generateReadme(answers) {
   
   - **GitHub**: [${answers.your_name}](https://github.com/${answers.your_name})
   - **Email**: [${answers.your_email}](mailto:${answers.your_email})
-
-  ## Table of Contents
-
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Tests](#tests)
-  - [Questions](#questions)
-
-
   
     `;
   
