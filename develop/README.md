@@ -2,42 +2,41 @@
   
   ## Title 
 
-  Title
+  title
+
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
   
-  Description
+  desc
   
   ## Installation
   
-  Installation Instructions
+  install 
   
   ## Usage
   
-  Usage instructions
+  usage
 
   ## Contributing 
 
-  Contributing guidelines
+  contribute
 
   
   ## License
   
   MIT 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
-  
   ## Tests
   
-  Testing instructions
+  instruct
   
   ## Questions
   
   For any questions or inquiries, please reach out to me:
   
   - **GitHub**: [jddg95](https://github.com/jddg95)
-  - **Email**: [jddgarcia95@gmail.com](mailto:jddgarcia95@gmail.com)
+  - **Email**: [jddgarcia95](mailto:jddgarcia95)
   
 ## Table of Contents
 - [Installation](#installation)
