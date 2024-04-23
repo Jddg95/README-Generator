@@ -22,6 +22,7 @@ This is a command-line application that generates a high-quality, professional R
 To install this application, follow these steps:
 
 1. Clone the repository to your local machine.
+- `https://github.com/Jddg95/README-Generator`
 2. Navigate to the root directory of the project.
 3. Run `npm install` to install the required dependencies.
 
